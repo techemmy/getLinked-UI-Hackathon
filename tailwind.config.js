@@ -15,9 +15,6 @@ module.exports = {
         purpleDarkWithOpacity: 'rgba(144, 58, 255, 0.12)',
         purpleLightWithOpacity: 'rgba(212, 52, 254, 0.12);',
       },
-      opacity: {
-        '12': '0.12'
-      },
       fontFamily: {
         'sans': ['Clash Display', ...defaultTheme.fontFamily.sans],
         'mont': ['Montserrat', 'sans'],
@@ -26,6 +23,7 @@ module.exports = {
       gridTemplateColumns: {
         // Simple 16 column grid
         'timeline': '1fr auto 1fr',
+        'prizeAndReward': 'auto 1fr'
       }
 
     },
