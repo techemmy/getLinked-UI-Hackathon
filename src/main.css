@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-end: #903AFF;
+    --color-primary-start: #FE34B9;
+    --color-secondary: #150E28;
+    --color-purple-dark: #903AFF;
+    --color-purple-light: #D434FE;
+  }
+}
+
+.date-no::before {
+    content: '';
+    height: 137px;
+    width: 4px;
+    position: absolute;
+    left: 45%;
+    bottom: 110%;
+    background-color: var(--color-purple-light);
+}
