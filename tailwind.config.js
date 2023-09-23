@@ -12,8 +12,11 @@ module.exports = {
         purpleDark: 'var(--color-purple-dark)',
         purpleLight: 'var(--color-purple-light)',
         borderColor: 'rgba(255, 255, 255, 0.18)',
-        purpleDarkWithOpacity: 'rgba(144, 58, 255, 0.12)',
-        purpleLightWithOpacity: 'rgba(212, 52, 254, 0.12);',
+        purpleDarkWithOpacity12: 'rgba(144, 58, 255, 0.12)',
+        purpleLightWithOpacity12: 'rgba(212, 52, 254, 0.12)',
+        purpleLightWithOpacity3: 'rgba(217, 217, 217, 0.03)',
+        purpleLightWithOpacity1: 'rgba(212, 52, 254, 0.01)',
+        whiteWithOpacity75: 'rgba(255, 255, 255, 0.75)',
       },
       fontFamily: {
         'sans': ['Clash Display', ...defaultTheme.fontFamily.sans],
