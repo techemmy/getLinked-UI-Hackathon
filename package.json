@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/main.css -o ./dist/output.css --watch",
+    "build:css": "npx tailwindcss -i ./src/main.css -o ./src/dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
