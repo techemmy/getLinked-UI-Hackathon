@@ -26,7 +26,6 @@ module.exports = {
       gridTemplateColumns: {
         // Simple 16 column grid
         'timeline': '1fr auto 1fr',
-        'prizeAndReward': 'auto 1fr',
       }
 
     },
