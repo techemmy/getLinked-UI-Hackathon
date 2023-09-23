@@ -17,12 +17,12 @@
 </head>
 
 
-<body class="bg-secondary text-white w-screen">
-    <header class="w-max border-solid border-b-[1px] border-borderColor">
+<body class="bg-secondary text-white w-full">
+    <header class="w-max border-solid border-b-[1px] border-borderColor mx-auto">
         <nav class="w-full flex border-solid border-b-[1px] border-borderColor mt-14 pb-6">
             <div class="w-[1512px] mx-auto px-24 flex justify-between">
                 <p class="text-[36px] font-bold">get<span class="text-purpleLight">linked</span></p>
-                <div class="items-center flex justify-end w-full font-mont text-base px-12">
+                <div class="hidden md:flex items-center flex justify-end w-full font-mont text-base px-12">
                     <ul class="flex justify-around w-[50%] mr-20">
                         <li class="pl-4 pr-4">Timeline</li>
                         <li class="pr-4">Overview</li>
@@ -32,67 +32,70 @@
                     <button
                         class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm">Register</button>
                 </div>
+                <img class="md:hidden" src="./assets/hamburger.svg" alt="Hamburger">
             </div>
         </nav>
 
-        <section class="pt-8 pb-16 relative">
-            <article class="w-[1512px] mx-auto px-24 flex justify-end items-end flex-col relative">
-                <img src="./assets/star.svg" alt="Star" class="absolute left-[9%]">
+        <section class="pt-8 md:pb-16 flex flex-col md:relative">
+            <article class="w-[1512px] mx-auto px-24 grid justify-center md:flex md:justify-end items-end flex-col relative">
+                <img src="./assets/star.svg" alt="Star" class="absolute left-[38%] top-[120%] md:top-0 md:left-[9%]">
+                <img src="./assets/star-low-light.svg" alt="Star" class="md:hidden absolute right-[27%] top-[120%] w-4 md:top-0 md:left-[9%]">
+
                 <p class="text-[36px] font-bold font-mont italic">Igniting a Revolution in HR Innovation</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="220" height="17" viewBox="0 0 255 17" fill="none">
+                <svg class="justify-self-end" xmlns="http://www.w3.org/2000/svg" width="220" height="17" viewBox="0 0 255 17" fill="none">
                     <path d="M1 14.043C43.3333 5.7097 154.4 -5.95697 254 14.043" stroke="#FF26B9" stroke-width="5" />
                 </svg>
             </article>
-            <section class="w-[1512px] px-24 mx-auto">
-                <section class="w-[60%] mt-40 relative">
+            <section class="w-[1512px] px-24 mx-auto grid justify-center md:block">
+                <section class="md:w-[60%] mt-20 md:mt-40 relative text-center md:text-left">
                     <img src="./assets/purple-flare.png" alt="Purple Flare"
                         class="absolute right-[5%] bottom-[20%] bg-blend-hard-light z-[-1]">
                     <img src="./assets/light-bulb.svg" alt="Light Bulb" class="absolute w-10 bottom-[94%] right-[29%]">
-                    <h1 class="w-full text-[80px] leading-[90px] font-bold">getlinked Tech
+                    <h1 class="w-[60%] md:w-full text-[80px] leading-[90px] font-bold mx-auto md:mx-0">getlinked Tech
                         Hackathon <span class="text-purpleLight">1.0</span>
                         <img src="./assets/chain-link.svg" alt="Chain Link" class="inline">
                         <img src="./assets/red-flare.svg" alt="Red Flare" class="inline">
                     </h1>
-                    <p class="w-[420px] pt-2 font-mont text-[20px]">Participate in getlinked tech Hackathon 2023 stand
+                    <p class="w-[420px] pt-2 font-mont text-[20px] mx-auto md:mx-0">Participate in getlinked tech Hackathon 2023 stand
                         a chance to win a Big prize</p>
                     <button
                         class="px-10 py-3 mt-8 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm font-mont">Register</button>
-                    <img src="./assets/star-low-light.svg" alt="Star" class="absolute right-[30%] w-4">
+                    <img src="./assets/star-low-light.svg" alt="Star" class="absolute right-[38%] bottom-[32%] md:bottom-0 md:right-[30%] w-4">
 
-                    <div class="mt-20 mb-24 flex gap-6 text-2xl font-unica text-[64px]">
+                    <div class="mt-20 md:mb-24 flex justify-center md:justify-start gap-6 text-2xl font-unica text-[64px]">
                         <p>00<span class="text-[14px]">H</span></p>
                         <p>00<span class="text-sm">M</span></p>
                         <p>00<span class="text-sm">S</span></p>
                     </div>
                 </section>
             </section>
-            <section class="absolute right-0 bottom-0 z-[-1] mt-10 overflow-x-clip">
-                <img src="./assets/metrix.svg" alt="Image Matrix" class="right-0 bg-blend-luminosity">
+            <section class="grid justify-center md:block relative md:absolute md:right-0 md:bottom-0 z-[-1] md:mt-10 overflow-x-clip w-full">
+                <img src="./assets/metrix.svg" alt="Image Matrix" class="hidden md:block md:right-0 bg-blend-luminosity">
                 <img src="./assets/purple-flare.png" alt="Purple Flare"
-                    class="absolute left-[35%] bottom-0 bg-blend-hard-light">
+                    class="hidden md:block absolute left-[35%] bottom-0 bg-blend-hard-light">
                 <img src="./assets/tech-guy.png" alt="Person wearing VR glasses"
-                    class="absolute right-1 bottom-[0%] bg-blend-luminosity">
+                    class="block md:absolute md:right-1 md:bottom-0 bg-blend-luminosity">
                 <img src="./assets/tech-circle.png" alt="Light illustration"
-                    class="absolute right-[5%] bottom-[10%] bg-blend-hard-light">
+                    class="absolute right-[28%] md:right-[4%] bottom-[10%] bg-blend-hard-light">
             </section>
         </section>
     </header>
 
-    <main class="w-max">
+    <main class="w-max mx-auto">
         <section class="w-full pb-20 pt-16 border-solid border-b-[1px] border-borderColor">
-            <article class="w-[1512px] px-24 mx-auto grid grid-cols-2 gap-16 items-center">
+            <article class="w-[1512px] px-24 mx-auto grid md:grid-cols-2 gap-24 md:gap-16 items-center">
                 <section class="relative grid justify-self-center">
                     <img src="./assets/big-idea.svg" alt="Idea bulb" class="w-[490px]">
                     <p class="absolute w-[150px] text-center text-[24px] font-mont font-bold top-[45%] left-[34%]">The
                         Big Idea!</p>
                     <img src="./assets/color-star.svg" alt="Star" class="absolute top-[30%] left-[-10%]">
-                    <img src="./assets/arrow.svg" alt="Star" class="absolute bottom-[0%] right-[-10%]">
+                    <img src="./assets/arrow.svg" alt="Star" class="absolute bottom-[-15%] right-[42%] md:bottom-[0%] md:right-[-10%]">
                 </section>
-                <section class="flex flex-col gap-6 justify-self-center">
-                    <div class="relative flex justify-between w-[535px]">
+                <section class="flex flex-col gap-6 justify-self-center text-center md:text-left">
+                    <div class="relative flex justify-center md:justify-between w-[535px]">
                         <h2 class="font-bold text-[32px] w-[398px]">Introduction to getlinked <span
                                 class="text-purpleLight">tech Hackathon 1.0</span></h2>
-                        <img src="./assets/color-star.svg" alt="Star" class="">
+                        <img src="./assets/color-star.svg" alt="Star" class="absolute right-0 top-1/2 md:static">
                     </div>
                     <p class="w-[535px] leading-[27.5px]">Our tech hackathon is a melting pot of visionaries, and its
                         purpose is as
@@ -107,14 +110,14 @@
 
         <section class="pb-20 pt-16 border-solid border-b-[1px] border-borderColor relative">
             <img src="./assets/purple-flare.png" alt="Purple flare"
-                class="absolute bg-blend-hard-light bottom-0 right-[35%] z-[-1]">
+                class="absolute bg-blend-hard-light bottom-[40%] md:bottom-0 right-[35%] z-[-1]">
             <img src="./assets/purple-side-flare.svg" alt="Purple flare"
                 class="absolute bg-blend-hard-light right-0 top-[30%]">
-            <article class="w-[1512px] px-24 mx-auto grid grid-cols-2 gap-16 items-center">
-                <section class="relative flex flex-col justify-self-center">
-                    <img src="./assets/star-low-light.svg" alt="Star" class="absolute top-[-10%] left-[50%]">
-                    <img src="./assets/star.svg" alt="Star" class="absolute bottom-[0%] right-[-10%]">
-                    <h2 class="font-bold text-[32px] w-[170px]">Rules and <span
+            <article class="w-[1512px] px-24 mx-auto flex flex-wrap flex-col-reverse md:grid grid-cols-2 gap-16 items-center">
+                <section class="relative flex flex-col gap-6 md:justify-self-center text-center md:text-left">
+                    <img src="./assets/star-low-light.svg" alt="Star" class="absolute left-[100%] top-[30%] md:top-[-10%] md:left-[50%] w-4">
+                    <img src="./assets/star.svg" alt="Star" class="absolute right-[65%] bottom-[-15%] md:bottom-[0%] md:right-[-10%] w-4">
+                    <h2 class="font-bold text-[32px] w-[170px] self-center md:self-start">Rules and <span
                             class="text-purpleLight">Guidelines</span></h2>
                     <p class="w-[535px] leading-[27.5px]">Our tech hackathon is a melting pot of visionaries, and its
                         purpose is as
@@ -126,28 +129,28 @@
                 </section>
                 <section class="flex flex-col gap-6 relative">
                     <img src="./assets/rules.svg" alt="Rules">
-                    <img src="./assets/ellipse.svg" alt="Ellipse" class="absolute right-[21%] top-[16%] z-[-1]">
+                    <img src="./assets/ellipse.svg" alt="Ellipse" class="hidden md:absolute right-[21%] top-[16%] z-[-1]">
                 </section>
             </article>
         </section>
 
-        <section class="pb-32 pt-24 border-solid border-b-[1px] border-borderColor relative overflow-x-clip">
+        <section class="pb-32 pt-36 border-solid border-b-[1px] border-borderColor relative overflow-x-clip">
             <img src="./assets/purple-flare.png" alt="Purple flare"
                 class="absolute bg-blend-hard-light top-[20%] right-[40%]">
             <img src="./assets/purple-flare.png" alt="Purple flare"
                 class="absolute bg-blend-hard-light left-[55%] top-[45%] rotate-180">
-            <article class="w-[1512px] px-24 mx-auto grid grid-cols-2 gap-16 items-center relative">
-                <img src="./assets/color-star.svg" alt="Star" class="absolute top-0 left-[13%]">
+            <article class="w-[1512px] px-24 mx-auto grid md:grid-cols-2 md:gap-16 justify-center items-center relative">
+                <img src="./assets/color-star.svg" alt="Star" class="absolute top-[-9%] md:top-0 left-[46%] md:left-[13%] w-6">
                 <section class="relative grid self-end">
                     <img src="./assets/judging.svg" alt="Judging Criteria">
                     <img src="./assets/ellipse.svg" alt="Ellipse" class="absolute left-[13%] top-[-7%] z-[-1]">
-                    <img src="./assets/star.svg" alt="Star" class="absolute bottom-[0%] right-0">
+                    <img src="./assets/star.svg" alt="Star" class="absolute bottom-[-110%] md:bottom-[0%] right-[10%] md:right-0">
                     <img src="./assets/star-low-light.svg" alt="Star" class="absolute top-[50%] left-[55%]">
                 </section>
-                <section class="flex flex-col gap-6">
-                    <h2 class="font-bold text-[32px] w-[267px]">Judging Criteria <span class="text-purpleLight">Key
+                <section class="flex flex-col gap-6 text-center md:text-left">
+                    <h2 class="font-bold text-[32px] w-[267px] self-center md:self-start">Judging Criteria <span class="text-purpleLight">Key
                             attributes</span></h2>
-                    <article class="w-[560px] text-[14px] flex flex-col gap-6 font-mont">
+                    <article class="w-[560px] text-[14px] flex flex-col gap-6 font-mont self-center md:self-start">
                         <p><span class="text-primaryStart leading-[27.76px] text-[16px] font-bold">Innovation and
                                 Creativity:</span> Evaluate the uniqueness and
                             creativity of the
@@ -176,19 +179,19 @@
                             specific technologies or APIs, and any other competition-specific requirements.</p>
                     </article>
                     <button
-                        class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm font-mont w-max">Read
+                        class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm font-mont w-max self-center md:self-start">Read
                         More</button>
                 </section>
             </article>
         </section>
 
         <section class="pb-20 pt-32 border-solid border-b-[1px] border-borderColor relative">
-            <article class="w-[1512px] px-24 mx-auto grid grid-cols-2 items-center relative">
-                <img src="./assets/color-star.svg" alt="Star" class="absolute top-[-7%] left-[11%]">
-                <section class="grid justify-center">
-                    <h2 class="font-bold text-[32px] w-[253px]">Frequently Ask<span class="text-purpleLight">
+            <article class="w-[1512px] px-24 mx-auto grid md:grid-cols-2  justify-center items-center relative">
+                <img src="./assets/color-star.svg" alt="Star" class="absolute top-0 left-[37%] md:top-[-7%] md:left-[11%]">
+                <section class="grid justify-center mb-[25%]">
+                    <h2 class="font-bold text-[32px] w-[253px] justify-self-center text-center md:text-left md:justify-self-start">Frequently Ask<span class="text-purpleLight">
                             Question</span></h2>
-                    <p class="w-[360px] leading-[27.5px] mt-6 mb-12">We got answers to the questions that you might
+                    <p class="w-[360px] leading-[27.5px] mt-6 mb-12 justify-self-center text-center md:text-left md:justify-self-start">We got answers to the questions that you might
                         want to ask about <span class="font-bold">Hackathon 1.0</span></p>
 
                     <ul class="flex flex-col gap-4 font-sm max-h-[500px] overflow-y-scroll">
@@ -274,11 +277,11 @@
                     <p class="w-[360px]">Here is the breakdown of the time we anticipate
                         using for the upcoming event.</p>
                 </section>
-                <section class="pt-20 font-mont relative">
+                <section class="hidden md:block pt-20 font-mont relative">
                     <img src="./assets/color-star.svg" alt="Purple start" class="absolute left-[26%]">
                     <img src="./assets/star-low-light.svg" alt="Purple start" class="absolute bottom-[6%] left-[16%]">
                     <img src="./assets/star.svg" alt="Purple start" class="absolute top-[45%] right-[25%]">
-                    <div class="grid grid-cols-timeline items-end gap-20 h-[200px] mt-2 mb-[80px]">
+                    <div class="grid grid-cols-timeline items-end gap-20 h-[200px] mt-2 mb-20">
                         <article class="text-right">
                             <h3 class="font-[24px] font-bold text-purpleLight">Hackathon Announcement</h3>
                             <p class="font-[14px]">The getlinked tech hackathon 1.0 is formally announced
@@ -354,6 +357,81 @@
                         </article>
                     </div>
                 </section>
+                <section class="md:hidden pt-20 font-mont relative grid justify-center">
+                    <img src="./assets/color-star.svg" alt="Purple start" class="absolute left-[26%]">
+                    <img src="./assets/star-low-light.svg" alt="Purple start" class="absolute bottom-[6%] left-[16%]">
+                    <img src="./assets/star.svg" alt="Purple start" class="absolute top-[45%] right-[25%]">
+                    <div class="flex gap-2 justify-center items-end mt-1">
+                        <div
+                            class="date-no w-[50px] h-[50px] text-[24px] text-center grid items-center border-solid rounded-[26.5px] font-bold bg-gradient-to-r from-primaryEnd to-purpleLight relative self-end">
+                            1
+                        </div>
+                        <article class="text-left w-[360px] h-[200px] flex flex-col ml-2 justify-evenly">
+                            <h3 class="font-[24px] font-bold text-purpleLight">Hackathon Announcement</h3>
+                            <p class="font-[14px]">The getlinked tech hackathon 1.0 is formally announced
+                                to the general public and teams begin to get ready to register</p>
+                            <p class="font-[24px] font-bold text-purpleLight">November 18, 2023</p>
+                        </article>
+                    </div>
+                    
+                    <div class="flex gap-2 justify-center items-end mt-2">
+                        <div
+                            class="date-no w-[50px] h-[50px] text-[24px] text-center grid items-center border-solid rounded-[26.5px] font-bold bg-gradient-to-r from-primaryEnd to-purpleLight relative self-end">
+                            2
+                        </div>
+                        <article class="text-left w-[360px] h-[200px] flex flex-col ml-2 justify-evenly">
+                            <h3 class="font-[24px] font-bold text-purpleLight">Teams Registration begins</h3>
+                            <p class="font-[14px]">Interested teams can now show their interest 
+in the getlinked tech hackathon 1.0 2023 by 
+proceeding to register</p>
+                            <p class="font-[24px] font-bold text-purpleLight">November 18, 2023</p>
+                        </article>
+                    </div>                    
+                    <div class="flex gap-2 justify-center items-end mt-2">
+                        <div
+                            class="date-no w-[50px] h-[50px] text-[24px] text-center grid items-center border-solid rounded-[26.5px] font-bold bg-gradient-to-r from-primaryEnd to-purpleLight relative self-end">
+                            3
+                        </div>
+                        <article class="text-left w-[360px] h-[200px] flex flex-col ml-2 justify-evenly">
+                            <h3 class="font-[24px] font-bold text-purpleLight">Teams Registration ends</h3>
+                            <p class="font-[14px]">Interested Participants are no longer Allowed to register</p>
+                            <p class="font-[24px] font-bold text-purpleLight">November 18, 2023</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-2 justify-center items-end mt-2">
+                        <div
+                            class="date-no w-[50px] h-[50px] text-[24px] text-center grid items-center border-solid rounded-[26.5px] font-bold bg-gradient-to-r from-primaryEnd to-purpleLight relative self-end">
+                            4
+                        </div>
+                        <article class="text-left w-[360px] h-[200px] flex flex-col ml-2 justify-evenly">
+                            <h3 class="font-[24px] font-bold text-purpleLight">Announcement of the accepted teams and ideas</h3>
+                            <p class="font-[14px]">All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced</p>
+                            <p class="font-[24px] font-bold text-purpleLight">November 18, 2023</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-2 justify-center items-end mt-2">
+                        <div
+                            class="date-no w-[50px] h-[50px] text-[24px] text-center grid items-center border-solid rounded-[26.5px] font-bold bg-gradient-to-r from-primaryEnd to-purpleLight relative self-end">
+                            5
+                        </div>
+                        <article class="text-left w-[360px] h-[200px] flex flex-col ml-2 justify-evenly">
+                            <h3 class="font-[24px] font-bold text-purpleLight">Getlinked Hackathon 1.0 Offically Begins</h3>
+                            <p class="font-[14px]">Accepted teams can now proceed to build their ground breaking skill driven solutions</p>
+                            <p class="font-[24px] font-bold text-purpleLight">November 18, 2023</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-2 justify-center items-end mt-2">
+                        <div
+                            class="date-no w-[50px] h-[50px] text-[24px] text-center grid items-center border-solid rounded-[26.5px] font-bold bg-gradient-to-r from-primaryEnd to-purpleLight relative self-end">
+                            6
+                        </div>
+                        <article class="text-left w-[360px] h-[200px] flex flex-col ml-2 justify-evenly">
+                            <h3 class="font-[24px] font-bold text-purpleLight">Demo Day</h3>
+                            <p class="font-[14px]">Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day</p>
+                            <p class="font-[24px] font-bold text-purpleLight">November 18, 2023</p>
+                        </article>
+                    </div>
+                </section>
             </article>
         </section>
 
@@ -362,18 +440,18 @@
                 class="absolute bg-blend-hard-light top-[5%] right-[35%]">
             <img src="./assets/purple-side-flare.svg" alt="Purple sie flare"
                 class="absolute bg-blend-hard-light right-0 top-[30%] z-[-1]">
-            <article class="relative w-[1512px] px-24 mx-auto fll gap-16 flex flex-col">
-                <section class="grid justify-end gap-4 relative">
-                    <img src="./assets/color-star.svg" alt="Star" class="absolute right-[9%] top-[70%] z-[-1]">
-                    <h2 class="font-bold text-[32px] w-[267px]">Prizes and <span class="text-purpleLight">Rewards</span>
+            <article class="relative w-[1512px] px-24 mx-auto fll gap-4 md:gap-16 flex flex-col">
+                <section class="grid justify-center md:justify-end gap-4 relative text-center md:text-left">
+                    <img src="./assets/color-star.svg" alt="Star" class="absolute left-[35%] top-[-15%] md:right-[9%] md:top-[70%] z-[-1]">
+                    <h2 class="font-bold text-[32px] w-[267px] justify-self-center md:justify-self-start">Prizes and <span class="text-purpleLight">Rewards</span>
                     </h2>
                     <p class="w-[430px] text-[14px] font-mont">Highlight of the prizes or rewards for winners and
                         participants</p>
                 </section>
-                <section class="grid grid-cols-prizeAndReward gap-6 mt-10">
-                    <section class="relative mt-30">
+                <section class="grid justify-center md:grid-cols-prizeAndReward gap-24 md:gap-6 mt-10">
+                    <section class="relative mt-30 grid justify-center">
                         <img src="./assets/prize.svg" alt="Prize and reward">
-                        <img src="./assets/color-star.svg" alt="Star" class="absolute bottom-[140%] left-[40%] w-5">
+                        <img src="./assets/color-star.svg" alt="Star" class="absolute left-[67%] bottom-[129%] md:bottom-[140%] md:left-[40%] w-3">
                         <img src="./assets/star.svg" alt="Star" class="absolute top-[105%] left-[30%] w-3">
                     </section>
                     <section class="mt-40 font-mont font-bold grid grid-cols-3 gap-6 relative">
@@ -431,7 +509,7 @@
                     <img src="./assets/purple-flare.png" alt="Purple Flare"
                         class="absolute top-0 right-[-50%] z-[-1] rotate-180">
                     <img src="./assets/color-star.svg" alt="Star" class="absolute top-[-9%] left-[5%] w-8">
-                    <img src="./assets/color-star.svg" alt="Star" class="absolute top-[16%] left-[56%]">
+                    <img src="./assets/color-star.svg" alt="Star" class="absolute top-[37%] md:top-[16%] left-[56%]">
                     <img src="./assets/star.svg" alt="Star" class="absolute bottom-[18%] left-[56%]">
                     <div class="justify-self-center self-center h-full w-full flex justify-center relative">
                         <div class="absolute w-full h-[4px] bg-purpleLight top-[120%]"></div>
@@ -464,16 +542,16 @@
         </section>
 
 
-        <section class="pb-32 pt-32">
-            <article class="w-[1512px] px-36 mx-auto grid grid-cols-2 gap-12">
-                <section class="relative">
+        <section class="pb-32 pt-32 mb-60 md:mb-0 overflow-x-clip">
+            <article class="w-[1512px] px-36 mx-auto grid md:grid-cols-2 gap-12">
+                <section class="relative grid">
                     <img src="./assets/star-low-light.svg" alt="Star" class="absolute left-[55%] top-[-2%]">
                     <img src="./assets/purple-flare.png" alt="Star" class="absolute left-[-31%] top-[75%]">
-                    <h2 class="font-bold text-[32px] w-[300px]">Privacy Policy and <span class="text-purpleLight">
+                    <h2 class="font-bold text-[32px] w-[300px] justify-self-center text-center md:text-left md:justify-self-start">Privacy Policy and <span class="text-purpleLight">
                             Terms</span>
                     </h2>
-                    <p class="mt-4 text-whiteWithOpacity75">Last updated on September 12, 2023</p>
-                    <p class="w-[450px] leading-[27.5px] mt-6 mb-12">Below are our privacy & policy, which outline a lot
+                    <p class="mt-4 text-whiteWithOpacity75 justify-self-center text-center md:text-left md:justify-self-start">Last updated on September 12, 2023</p>
+                    <p class="w-[450px] leading-[27.5px] mt-6 mb-12 justify-self-center text-center md:text-left md:justify-self-start">Below are our privacy & policy, which outline a lot
                         of goodies. it’s our aim to always take of our participant</p>
 
                     <article
@@ -526,7 +604,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <img src="./assets/privacy.svg" alt="Star" class="absolute top-[20%]">
+                    <img src="./assets/privacy.svg" alt="Star" class="absolute top-[30%] left-[26%] md:left-0 md:top-[20%]">
                     <img src="./assets/color-star.svg" alt="Star" class="absolute top-[14%] left-[-10%]">
                     <img src="./assets/star.svg" alt="Star" class="absolute top-[17%] left-[71%] w-4">
                     <img src="./assets/color-star.svg" alt="Star" class="absolute top-[63%] left-[25%] w-4">
@@ -537,8 +615,8 @@
         </section>
     </main>
 
-    <footer class="w-fit flex flex-col bg-[#100B20] pb-14">
-        <section class="grid grid-cols-2 gap-20 w-[1512px] mx-auto px-36 pt-24 pb-12">
+    <footer class="w-fit flex flex-col bg-[#100B20] pb-14 mx-auto">
+        <section class="grid md:grid-cols-2 gap-20 w-[1512px] mx-auto px-36 pt-24 pb-12">
             <section class="info flex flex-col gap-8 justify-between relative">
                 <img src="./assets/star.svg" alt="Star" class="absolute top-[20%] left-[-15%] w-5">
                 <article>
@@ -549,9 +627,9 @@
                 </article>
                 <p><a class="border-purpleLight border-r-2 mr-4 pr-4">Terms of Use</a><a>Privacy Policy</a></p>
             </section>
-            <section class="grid grid-cols-2 gap-20">
-                <section class="links justify-self-center font-mont relative">
-                    <img src="./assets/star-low-light.svg" alt="Star" class="absolute top-[20%] right-[-20%] w-5">
+            <section class="grid md:grid-cols-2 gap-20">
+                <section class="links md:justify-self-center font-mont relative">
+                    <img src="./assets/star-low-light.svg" alt="Star" class="absolute right-[89%] top-[46%] md:top-[20%] md:right-[-20%] w-5">
                     <p class="text-purpleLight font-bold text-[14px] mb-4">Useful Links</p>
                     <ul class="flex flex-col gap-y-4 text-[12px]">
                         <li>Overview</li>
@@ -583,8 +661,8 @@
                         </div>
                     </ul>
                 </section>
-                <section class="contact justify-self-center flex flex-col gap-y-4 font-mont relative">
-                    <img src="./assets/star.svg" alt="Star" class="absolute bottom-0 right-[-20%] w-5">
+                <section class="contact md:justify-self-center flex flex-col gap-y-4 font-mont relative">
+                    <img src="./assets/star.svg" alt="Star" class="absolute bottom-0 right-0 md:right-[-20%] w-5">
                     <p class="text-purpleLight font-bold text-[14px]">Contact Us</p>
                     <div class="flex gap-4 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -609,8 +687,8 @@
             </section>
             
         </section>
-        <div class="w-full text-center pt-4 relative">
-            <img src="./assets/color-star.svg" alt="Star" class="absolute bottom-[90%] left-[49%] w-5">
+        <div class="w-full md:text-center px-36 md:px-0 pt-4 relative">
+            <img src="./assets/color-star.svg" alt="Star" class="absolute bottom-[90%] left-[15%] w-3 md:left-[49%] md:w-5">
             <p>All rights reserved. © getlinked Ltd.</p>
         </div>
     </footer>
