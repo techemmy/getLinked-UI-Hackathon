@@ -24,7 +24,7 @@ module.exports = {
         'unica': ['Unica One', 'sans'],
       },
       gridTemplateColumns: {
-        // Simple 16 column grid
+        'intro': 'auto 1fr',
         'timeline': '1fr auto 1fr',
         'prizeAndReward': '1fr auto',
       }
