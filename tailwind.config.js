@@ -30,8 +30,14 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 9s linear infinite',
-      }
-
+      },
+      backgroundSize: {
+        'size-100': '100% 100%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-200': '200% 200%',
+      },
     },
   },
   plugins: [],

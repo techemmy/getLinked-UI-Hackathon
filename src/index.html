@@ -25,41 +25,42 @@
 
 
 <body class="bg-secondary text-white w-screen">
-    <div id="hamburgerMenu" class="md:hidden absolute transition-all ease-linear duration-500 top-[-100%] left-0 right-0 menu p-8 w-full z-10 bg-secondary border-2 border-borderColor pt-16">
+    <div id="hamburgerMenu" class="md:hidden fixed transition-all ease-linear duration-500 top-[-100%] left-0 right-0 menu p-8 w-full z-20 bg-secondary pt-16">
 
         <div id="closeMenu" class="h-[40px] w-[40px] rounded-full bg-gradient-to-r from-purpleDark to-purpleLight grid justify-center items-center ml-auto cursor-pointer">
           <span class="block text-white px-2 py-2 h-[30px] w-[30px] rounded-full bg-secondary grid justify-center items-center content-center">X</span>
         </div>
 
         <ul class="flex flex-col gap-y-4 text-[16px] mt-8 w-max">
-            <li>Timeline</li>
-            <li>Overview</li>
-            <li>FAQs</li>
-            <li>Register</li>
+            <a href="#timeline"><li>Timeline</li></a>
+            <a href="#overview"><li>Overview</li></a>
+            <a href="#faq"><li>FAQs</li></a>
+            <a href="#contact"><li>Contact</li></a>
             <button
-            class="px-10 py-3 mt-2 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm font-mont">Register</button>
+            class="px-10 py-3 mt-2 anim-bg-gradient rounded-sm font-mont">Register</button>
         </ul>
     </div>
     <header class="max-w-[1512px] mx-auto border-solid border-b-[1px] border-borderColor">
-        <nav class="max-w-[1512px] mx-auto flex border-solid border-b-[1px] border-borderColor mt-14 pb-6">
+        <nav class="max-w-[1512px] mx-auto flex border-solid border-b-[1px] border-borderColor mt-14 pb-6 left-0 right-0 top-0 fixed md:static z-10">
             <div class="w-full 
                         px-8 md:px-24 flex justify-between">
                 <p class="text-[30px] md:text-[36px] font-bold">get<span class="text-purpleLight">linked</span></p>
                 <div class="hidden md:flex items-center flex justify-end w-full font-mont text-base">
                     <ul class="flex justify-around mr-8">
-                        <li class="pl-4 pr-4">Timeline</li>
-                        <li class="pr-4">Overview</li>
-                        <li class="pr-4">FAQs</li>
-                        <li class="pr-4">Contact</li>
+                        <a href="#timeline"><li class="pl-4 pr-4">Timeline</li></a>
+                        <a href="#overview"><li class="pr-4">Overview</li></a>
+                        <a href="#faq"><li class="pr-4">FAQs</li></a>
+                        <a href="#contact"><li class="pr-4">Contact</li></a>
                     </ul>
                     <button
-                        class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm">Register</button>
+                        class="px-10 py-3 anim-bg-gradient rounded-sm">Register</button>
+                    
                 </div>
                 <img id="toggleMenu" class="md:hidden cursor-pointer" src="./assets/hamburger.svg" alt="Hamburger">
             </div>
         </nav>
 
-        <section class="max-w-[1512px] mx-auto pt-8 md:pb-16 flex flex-col md:relative">
+        <section class="max-w-[1512px] mx-auto mt-28 md:mt-0 pt-8 md:pb-16 flex flex-col md:relative">
             <article class="w-full mx-auto px-8 md:px-24 grid justify-center md:flex md:justify-end items-end flex-col relative">
                 <img src="./assets/star.svg" alt="Star" class="absolute left-[38%] top-[120%] md:top-0 md:left-[9%]">
                 <img src="./assets/star-low-light.svg" alt="Star" class="md:hidden absolute right-[27%] top-[120%] w-4 md:top-0 md:left-[9%]">
@@ -84,7 +85,7 @@
                     <p class="max-w-[420px] pt-2 font-mont md:text-[20px] mx-auto md:mx-0" data-aos="fade-right" data-aos-duration="1000">Participate in getlinked tech Hackathon 2023 stand
                         a chance to win a Big prize</p>
                     <button
-                        class="px-10 py-3 mt-8 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm font-mont">Register</button>
+                        class="px-10 py-3 mt-8 anim-bg-gradient rounded-sm font-mont">Register</button>
                     <img src="./assets/star-low-light.svg" alt="Star" class="absolute right-[38%] bottom-[32%] md:bottom-0 md:right-[30%] w-4">
 
                     <div class="mt-10 md:mt-20 md:mb-24 flex justify-center md:justify-start gap-6 text-2md font-unica text-[32px] sm:text-[64px]">
@@ -107,7 +108,7 @@
     </header>
 
     <main class="w-full mx-auto">
-        <section class="max-w-[1512px] mx-auto pb-20 pt-16 border-solid border-b-[1px] border-borderColor">
+        <section id="overview" class="max-w-[1512px] mx-auto pb-20 pt-16 border-solid border-b-[1px] border-borderColor">
             <article class="w-full px-8 md:px-36 grid md:grid-cols-intro gap-24 md:gap-16 items-center">
                 <section class="relative grid justify-self-center"  data-aos="fade-down" data-aos-duration="1000">
                     <img src="./assets/big-idea.svg" alt="Idea bulb" class="w-[490px]">
@@ -202,13 +203,13 @@
                             specific technologies or APIs, and any other competition-specific requirements.</p>
                     </article>
                     <button
-                        class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm font-mont w-max self-center md:self-start">Read
+                        class="px-10 py-3 anim-bg-gradient rounded-sm font-mont w-max self-center md:self-start">Read
                         More</button>
                 </section>
             </article>
         </section>
 
-        <section class="max-w-[1512px] mx-auto pb-20 pt-32 border-solid border-b-[1px] border-borderColor relative">
+        <section id="faq" class="max-w-[1512px] mx-auto pb-20 pt-32 border-solid border-b-[1px] border-borderColor relative">
             <article class="px-8 md:px-24 grid md:grid-cols-intro gap-6 justify-center items-center relative">
                 <img src="./assets/color-star.svg" alt="Star" class="absolute top-0 left-[37%] md:top-[-7%] md:left-[11%]">
                 <section class="grid justify-center mb-[25%] px-4" data-aos="fade-down" data-aos-duration="1000">
@@ -293,7 +294,7 @@
             </article>
         </section>
 
-        <section class="max-w-[1512px] mx-auto pb-20 pt-32 border-solid border-b-[1px] border-borderColor relative">
+        <section id="timeline" class="max-w-[1512px] mx-auto pb-20 pt-32 border-solid border-b-[1px] border-borderColor relative">
             <article class="px-8 md:px-36">
                 <section class="grid justify-center text-center">
                     <h2 class="font-bold text-[32px]">Timeline</h2>
@@ -613,7 +614,7 @@ proceeding to register</p>
                             </li>
                         </ul>
                         <button
-                            class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm justify-self-center">Read
+                            class="px-10 py-3 anim-bg-gradient rounded-sm justify-self-center">Read
                             More</button>
                     </article>
                 </section>
@@ -630,7 +631,7 @@ proceeding to register</p>
         </section>
     </main>
 
-    <footer class="w-full mx-auto flex flex-col bg-[#100B20] pb-14">
+    <footer id="contact" class="w-full mx-auto flex flex-col bg-[#100B20] pb-14">
         <section class="max-w-[1512px] mx-auto grid md:grid-cols-2 gap-20 px-8 md:px-36 pt-24 pb-12">
             <section class="w-full flex flex-col gap-8 justify-between relative">
                 <img src="./assets/star.svg" alt="Star" class="absolute top-[20%] left-[-15%] w-5">
