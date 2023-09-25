@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
     <head>
   <link
@@ -20,10 +20,26 @@
   />
 </head>
     <link href="./dist/output.css" rel="stylesheet">
+    <script src="./script.js"></script>
 </head>
 
 
 <body class="bg-secondary text-white w-screen">
+    <div id="hamburgerMenu" class="absolute transition-all ease-in duration-500 top-0 left-0 right-0 menu p-8 w-full z-10 bg-secondary border-2 border-borderColor pt-14">
+
+        <div id="closeMenu" class="h-[40px] w-[40px] rounded-full bg-gradient-to-r from-purpleDark to-purpleLight  grid justify-center items-center ml-auto">
+          <span class="block text-white px-2 py-2 h-[30px] w-[30px] rounded-full bg-secondary grid justify-center items-center content-center">X</span>
+        </div>
+
+        <ul class="flex flex-col gap-y-4 text-[16px] mt-8 w-max">
+            <li>Timeline</li>
+            <li>Overview</li>
+            <li>FAQs</li>
+            <li>Register</li>
+            <button
+            class="px-10 py-3 mt-2 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm font-mont">Register</button>
+        </ul>
+    </div>
     <header class="max-w-[1512px] mx-auto border-solid border-b-[1px] border-borderColor">
         <nav class="max-w-[1512px] mx-auto flex border-solid border-b-[1px] border-borderColor mt-14 pb-6">
             <div class="w-full 
@@ -39,7 +55,7 @@
                     <button
                         class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm">Register</button>
                 </div>
-                <img class="md:hidden" src="./assets/hamburger.svg" alt="Hamburger">
+                <img id="toggleMenu" class="md:hidden" src="./assets/hamburger.svg" alt="Hamburger">
             </div>
         </nav>
 
@@ -448,7 +464,7 @@ proceeding to register</p>
             <img src="./assets/purple-side-flare.svg" alt="Purple sie flare"
                 class="absolute bg-blend-hard-light right-0 top-[30%] z-[-1]">
             <article class="relative px-8 md:px-36 fll gap-4 md:gap-16 flex flex-col">
-                <section class="grid justify-center md:justify-end gap-4 relative text-center md:text-left" data-aos="fade-left" data-aos-duration="500">
+                <section class="grid justify-center md:justify-end gap-4 relative text-center md:text-left" data-aos="fade-down" data-aos-duration="500">
                     <img src="./assets/color-star.svg" alt="Star" class="absolute left-[35%] top-[-15%] md:right-[9%] md:top-[70%] z-[-1]">
                     <h2 class="font-bold text-[32px] max-w-[267px] justify-self-center md:justify-self-start">Prizes and <span class="text-purpleLight">Rewards</span>
                     </h2>
@@ -513,7 +529,7 @@ proceeding to register</p>
                 </section>
 
                 <section
-                    class="relative w-full mt-14 p-4 sm:p-8 md:p-32 border-[1px] border-purpleLight rounded-[8px] grid grid-cols-3 gap-12 justify-center" data-aos="fade-up" data-aos-duration="500">
+                    class="relative w-full mt-14 p-4 sm:p-8 md:p-28 border-[1px] border-purpleLight rounded-[8px] grid grid-cols-3 gap-12 justify-center" data-aos="fade-up" data-aos-duration="500">
                     <img src="./assets/purple-flare.png" alt="Purple Flare"
                         class="absolute bottom-0 left-[-25%] z-[-1]">
                     <img src="./assets/purple-flare.png" alt="Purple Flare"
@@ -522,26 +538,26 @@ proceeding to register</p>
                     <img src="./assets/color-star.svg" alt="Star" class="absolute top-[37%] md:top-[16%] left-[56%]">
                     <img src="./assets/star.svg" alt="Star" class="absolute bottom-[18%] left-[56%]">
                     <div class="justify-self-center self-center h-full w-full flex justify-center relative">
-                        <div class="absolute w-full h-[4px] bg-purpleLight top-[120%]"></div>
+                        <div class="absolute w-full h-[2px] xl:h-[4px] bg-purpleLight top-[120%]"></div>
                         <img class="object-scale-down" src="./assets/libertyassured-logo.png"
                             alt="Liberty Assured logo">
                     </div>
                     <div class="justify-self-center self-center h-full w-full flex justify-center relative">
-                        <div class="absolute w-full h-[4px] bg-purpleLight top-[120%]"></div>
-                        <div class="absolute w-[4px] h-full bg-purpleLight left-[-8%]"></div>
-                        <div class="absolute w-[4px] h-full bg-purpleLight right-[-8%]"></div>
+                        <div class="absolute w-full h-[2px] xl:h-[4px] bg-purpleLight top-[120%]"></div>
+                        <div class="absolute w-[2px] xl:w-[4px] h-full bg-purpleLight left-[-8%]"></div>
+                        <div class="absolute w-[2px] xl:w-[4px] h-full bg-purpleLight right-[-8%]"></div>
                         <img class="object-scale-down" src="./assets/libertypay-logo.png" alt="Liberty Pay logo">
                     </div>
                     <div class="justify-self-center self-center h-full w-full flex justify-center relative">
-                        <div class="absolute w-full h-[4px] bg-purpleLight top-[120%]"></div>
+                        <div class="absolute w-full h-[2px] xl:h-[4px] bg-purpleLight top-[120%]"></div>
                         <img class="object-scale-down" src="./assets/winwise-logo.png" alt="WinWise logo">
                     </div>
                     <div class="justify-self-center self-center h-full w-full flex justify-center">
                         <img class="object-scale-down" src="./assets/whispersms-logo.png" alt="Whispersms logo">
                     </div>
                     <div class="justify-self-center self-center h-full w-full flex justify-center relative">
-                        <div class="absolute w-[4px] h-full bg-purpleLight left-[-8%]"></div>
-                        <div class="absolute w-[4px] h-full bg-purpleLight right-[-8%]"></div>
+                        <div class="absolute w-[2px] xl:w-[4px] h-full bg-purpleLight left-[-8%]"></div>
+                        <div class="absolute w-[2px] xl:w-[4px] h-full bg-purpleLight right-[-8%]"></div>
                         <img class="object-scale-down" src="./assets/paybox-logo.png" alt="Paybox logo">
                     </div>
                     <div class="justify-self-center self-center h-full w-full flex justify-center">
