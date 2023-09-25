@@ -27,6 +27,9 @@ module.exports = {
         'intro': 'auto 1fr',
         'timeline': '1fr auto 1fr',
         'prizeAndReward': '1fr auto',
+      },
+      animation: {
+        'spin-slow': 'spin 9s linear infinite',
       }
 
     },
