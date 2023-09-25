@@ -25,9 +25,9 @@
 
 
 <body class="bg-secondary text-white w-screen">
-    <div id="hamburgerMenu" class="absolute transition-all ease-in duration-500 top-0 left-0 right-0 menu p-8 w-full z-10 bg-secondary border-2 border-borderColor pt-14">
+    <div id="hamburgerMenu" class="md:hidden absolute transition-all ease-linear duration-500 top-[-100%] left-0 right-0 menu p-8 w-full z-10 bg-secondary border-2 border-borderColor pt-16">
 
-        <div id="closeMenu" class="h-[40px] w-[40px] rounded-full bg-gradient-to-r from-purpleDark to-purpleLight  grid justify-center items-center ml-auto">
+        <div id="closeMenu" class="h-[40px] w-[40px] rounded-full bg-gradient-to-r from-purpleDark to-purpleLight grid justify-center items-center ml-auto cursor-pointer">
           <span class="block text-white px-2 py-2 h-[30px] w-[30px] rounded-full bg-secondary grid justify-center items-center content-center">X</span>
         </div>
 
@@ -55,7 +55,7 @@
                     <button
                         class="px-10 py-3 bg-gradient-to-r from-primaryStart to-primaryEnd rounded-sm">Register</button>
                 </div>
-                <img id="toggleMenu" class="md:hidden" src="./assets/hamburger.svg" alt="Hamburger">
+                <img id="toggleMenu" class="md:hidden cursor-pointer" src="./assets/hamburger.svg" alt="Hamburger">
             </div>
         </nav>
 
